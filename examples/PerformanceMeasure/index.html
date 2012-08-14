@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <!-- jQuery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- gamecore.js from repo -->
+    <script src="../../src/class.js"></script>
+    <script src="../../src/gamecore.js"></script>
+    <script src="../../src/jhashtable.js"></script>
+    <script src="../../src/linkedlist.js"></script>
+    <script src="../../src/pooled.js"></script>
+    <script src="../../src/perf.js"></script>
+    <script src="../../src/device.js"></script>
+    <!-- dummy codes -->
+    <script>
+        $(function() {
+            var measure = new gamecore.PerformanceMeasure('A test');
+            var alma = 1
+            for (var i=0; i<1000; i++) {
+                alma += i;
+            }
+            console.log(measure.end());
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
